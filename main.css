@@ -1,0 +1,593 @@
+/* test de CSS */
+
+
+
+/* Fin de Test CSS*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+body {
+    padding: 20px 80px;
+    background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+}
+
+#menu {
+    /* width: 1257px;
+    height: 170px; */
+    list-style: none;
+    margin: 10px 0 0 0; padding: 25px 10px;
+    border-top: 4px double #AAA;
+    border-bottom: 4px double #AAA;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+a:hover {
+        color: #8cc43d;
+}
+a{
+    color: #333;
+}
+
+nav .medium {
+    display: none;
+}
+#menu li {
+    display: inline-block;
+    width: 173px;
+    margin: 0 10px;
+    position: relative;
+    -webkit-transform: skewy(-3deg);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: 200ms all;
+    margin: 15px auto;
+}
+#menu li a span {
+    align-items: center;
+}
+#menu li a {
+    text-transform: uppercase;
+    font-family: 'Squada One', cursive;
+    font-weight: 800;
+    display: flex; /* block */
+    background: #FFF;
+    color: #333;
+    font-size: 20px;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    text-shadow: 
+        1px 1px 0px #FFF, 
+        2px 2px 0px #999,
+        3px 3px 0px #FFF;
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.05) 100%);
+    -webkit-transition: 1s all;
+    background-image: -webkit-linear-gradient(left top, 
+        transparent 0%, transparent 25%, 
+        rgba(0,0,0,.15) 25%, rgba(0,0,0,.15) 50%, 
+        transparent 50%, transparent 75%, 
+        rgba(0,0,0,.15) 75%);
+    background-size: 4px 4px;
+    box-shadow: 
+        0 0 0 1px rgba(0,0,0,.4) inset, 
+        0 0 20px -5px rgba(0,0,0,.4),
+        0 0 0px 3px #FFF inset;
+    height: 80px;
+    align-content: center;
+    
+}
+#menu li:hover {
+    width: 203px;
+    margin: 0 -5px;
+}
+#menu a:hover {
+color: #8cc43d;
+}
+
+#menu li:after,
+#menu li:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background: #BBB;
+    -webkit-transform: skewY(8deg);
+    x-index: -3;
+    border-radius: 4px;
+}
+#menu li:after {
+    background-image: -webkit-linear-gradient(left, transparent 0%, rgba(0,0,0,.4) 100%);
+    right: 0;
+    top: -4px; 
+}
+#menu li:before {
+    left: 0;
+    bottom: -4px;
+    background-image: -webkit-linear-gradient(right, transparent 0%, rgba(0,0,0,.4) 100%);
+}
+
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Squada One', cursive;
+    font-weight: 800;
+     display: flex; /* block */
+    background: #FFF;
+    color: #333;
+    font-size: 20px;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    text-shadow: 
+        1px 1px 0px #FFF, 
+        2px 2px 0px #999,
+        3px 3px 0px #FFF;
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.05) 100%);
+    -webkit-transition: 1s all;
+    background-image: -webkit-linear-gradient(left top, 
+        transparent 0%, transparent 25%, 
+        rgba(0,0,0,.15) 25%, rgba(0,0,0,.15) 50%, 
+        transparent 50%, transparent 75%, 
+        rgba(0,0,0,.15) 75%);
+    background-size: 4px 4px;
+    box-shadow: 
+        0 0 0 1px rgba(0,0,0,.4) inset, 
+        0 0 20px -5px rgba(0,0,0,.4),
+        0 0 0px 3px #FFF inset;
+}
+
+
+
+
+
+
+header {
+    margin: 20px 20px 30px 20px;
+}
+header div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Squada One', cursive;
+    text-shadow: 1px 1px 0px #FFF, 2px 2px 0px #999, 3px 3px 0px #FFF;
+}
+
+header img {
+    width: 230px;
+}
+
+/* Photo qui vibre lors du survol https://css-tricks.com/snippets/css/shake-css-keyframe-animation/ */
+
+.face:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    }
+
+@keyframes shake {
+    10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+    transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+    transform: translate3d(4px, 0, 0);
+    }
+}
+/* Fin */
+
+
+nav {
+    
+    margin: 20px 20px 30px 20px;
+}
+nav br {
+    display: none
+}
+ul{
+    justify-content: center;
+}
+.pitch {
+    font-family: MV Boli;
+}
+
+/* Texte qui s'écrit https://css-tricks.com/snippets/css/typewriter-effect/  */
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    }
+
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    }
+
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+    }
+
+
+
+/* Fin */
+
+.box { 
+    width: 1080px; 
+    height: 100px; 
+    border: solid 5px #000; 
+    border-color: #000 transparent transparent transparent; 
+    border-radius: 20%/ 100px 100px 0 0; 
+} 
+.margin-10px {
+    margin : 10px 10px 10px 10px;
+}
+
+.titre{ 
+    font-size: 35px;
+}
+.soustitre{
+    font-size: 30px;
+}
+
+.slogan {
+    font-size : 20px;
+}
+
+h2 .vert{
+
+    background: #c47c48;
+    display: block;
+    width: 80%;
+    color: #fff;
+}
+h2 .brun{
+    background: #c47c48;
+    display: block;
+    width: 80%;
+    color: #fff;
+    
+}
+h3 {
+    font-size: 15px;
+    color: black;
+}
+
+p { 
+    font-size: 20px;
+}
+
+
+
+
+
+
+.flexstart {
+    display: block;
+    align-self: flex-start;
+}
+.case {
+    
+    background: #e9e9e7;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2) inset;
+    position: relative;
+}
+
+.upcase {
+    display: block;
+    background: #c47c48;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,.4) inset;
+    border-radius: 10px 10px 10px 0;
+    top: 20px;
+}
+
+footer {
+
+    display: flex;
+    justify-content: space-around;
+    position : sticky;
+    bottom: 0;
+    margin: 20px 20px 20px 20px;
+
+    text-transform: uppercase;
+    font-family: 'Squada One', cursive;
+    font-weight: 800;
+     display: flex; /* block */
+    background: #FFF;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+    text-shadow: 
+        1px 1px 0px #FFF, 
+        2px 2px 0px #999,
+        3px 3px 0px #FFF;
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.05) 100%);
+    -webkit-transition: 1s all;
+    background-image: -webkit-linear-gradient(left top, 
+        transparent 0%, transparent 25%, 
+        rgba(0,0,0,.15) 25%, rgba(0,0,0,.15) 50%, 
+        transparent 50%, transparent 75%, 
+        rgba(0,0,0,.15) 75%);
+    background-size: 4px 4px;
+    box-shadow: 
+        0 0 0 1px rgba(0,0,0,.4) inset, 
+        0 0 20px -5px rgba(0,0,0,.4),
+        0 0 0px 3px #FFF inset;
+}
+
+
+.main-timeline3{
+    overflow:hidden;
+    position:relative;
+}
+.main-timeline3:before{
+    content:"";
+    width:10px;
+    height:100%;
+    border:3px solid #959595;
+    position:absolute;
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.main-timeline3 .timeline{
+    width:50%;
+    padding:10px 60px 10px 100px;
+    float:right;
+    position:relative;
+}
+.main-timeline3 .timeline:before{
+    content:"";
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#c47c48;
+    border:5px solid #fff;
+    box-shadow:0 0 1px 5px #c47c48;
+    position:absolute;
+    top:42px;
+    left:-20px;
+}
+.main-timeline3 .timeline-content{
+    display:block;
+    background:#e9e9e7;
+    padding:70px 30px 20px;
+    box-shadow:0 0 10px rgba(0,0,0,.2) inset;
+    position:relative;
+}
+.main-timeline3 .timeline-content:hover{
+    text-decoration:none;
+}
+.main-timeline3 .year{
+    display:block;
+    width:90%;
+    height:50px;
+    background:#c47c48;
+    padding:0 0 0 30px;
+    font-size:20px;
+    font-weight:800;
+    color:#fff;
+    line-height:50px;
+    box-shadow:0 0 20px rgba(0,0,0,.4) inset;
+    border-radius:10px 10px 10px 0;
+    position:absolute;
+    top:20px;
+    left:-20px;
+}
+
+.timeline-content:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    /* background-color: yellow; */
+}
+
+.main-timeline3 .year:before{
+    content:"";
+    border-top:40px solid #c47c48;
+    border-left:20px solid transparent;
+    border-bottom:20px solid transparent;
+    position:absolute;
+    bottom:-60px;
+    left:0;
+}
+.main-timeline3 .title{
+    font-size:18px;
+    font-weight:600;
+    text-transform:uppercase;
+    color:#4a4a4a;
+}
+.main-timeline3 .description{
+    font-size:14px;
+    color:#6f6f6f;
+    margin:0 0 5px;
+}
+.main-timeline3 .timeline:nth-child(2n){
+    padding:10px 100px 10px 60px;
+    text-align:right;
+}
+.main-timeline3 .timeline:nth-child(2n):before{
+    left:auto;
+    right:-20px;
+    background:#8cc43d;
+    box-shadow:0 0 1px 5px #8cc43d;
+}
+.main-timeline3 .timeline:nth-child(2n) .year{
+    padding-right:50px;
+    border-radius:10px 10px 0;
+    left:auto;
+    right:-20px;
+    background:#8cc43d;
+}
+.main-timeline3 .timeline:nth-child(2n) .year:before{
+    border-left:none;
+    border-right:20px solid transparent;
+    left:auto;
+    right:0;
+    border-top-color:#8cc43d;
+}
+.main-timeline3 .timeline:nth-child(2){
+    margin-top:140px;
+}
+.main-timeline3 .timeline:nth-child(odd){
+    margin:-140px 0 0;
+}
+.main-timeline3 .timeline:nth-child(even){
+    margin-bottom:60px;
+}
+.main-timeline3 .timeline:first-child,.main-timeline3 .timeline:last-child:nth-child(even){
+    margin:0;
+}
+.main-timeline3 .timeline:nth-child(3n):before{
+    background:#c47c48;
+    box-shadow:0 0 1px 5px #c47c48;
+}
+.main-timeline3 .timeline:nth-child(3n) .year{
+    background:#c47c48;
+}
+.main-timeline3 .timeline:nth-child(3n) .year:before{
+    border-top-color:#c47c48;
+}
+.main-timeline3 .timeline:nth-child(4n):before{
+    background:#8cc43d;
+    box-shadow:0 0 1px 5px #8cc43d;
+}
+.main-timeline3 .timeline:nth-child(4n) .year{
+    background:#8cc43d;
+}
+.main-timeline3 .timeline:nth-child(4n) .year:before{
+    border-top-color:#8cc43d;
+}
+.main-timeline3 .timeline:nth-child(5n):before{
+    background:#c47c48;
+    box-shadow:0 0 1px 5px #c47c48;
+}
+.main-timeline3 .timeline:nth-child(5n) .year{
+    background:#c47c48;
+}
+.main-timeline3 .timeline:nth-child(5n) .year:before{
+    border-top-color:#c47c48;
+}
+.main-timeline3 .timeline:nth-child(6n):before{
+    background:#8cc43d;
+    box-shadow:0 0 1px 5px #8cc43d;
+}
+.main-timeline3 .timeline:nth-child(6n) .year{
+    background:#8cc43d;
+}
+.main-timeline3 .timeline:nth-child(6n) .year:before{
+    border-top-color:#8cc43d;
+}
+@media only screen and (max-width:1024px){
+    nav .medium {
+        display: block;
+    }
+    nav .large {
+        display: none;
+    }
+    
+    footer br {
+        /* display: none; */
+    }
+}
+
+
+@media only screen and (max-width:990px){
+    .main-timeline3:before{top:8%}
+    .main-timeline3 
+    .timeline{
+        padding:10px 10px 10px 100px}
+    .main-timeline3 
+    .timeline:nth-child(2n){
+        padding:10px 100px 10px 10px}
+    .main-timeline3 
+    .year{width:90%;font-size:15px;font-weight:800;}
+
+}
+@media only screen and (max-width:767px){
+    
+
+body {
+    padding: 0px;
+}
+.main-timeline3:before{
+    width:8px;
+    top:0;
+    left:12px;
+    transform:translateX(0)}
+.main-timeline3 .timeline,
+.main-timeline3 .timeline:nth-child(even),
+.main-timeline3 .timeline:nth-child(odd){
+    width:100%;
+    float:none;
+    text-align:left;
+    padding:0 0 0 60px;
+    margin:0 0 30px}
+.main-timeline3 .timeline:before,
+.main-timeline3 .timeline:nth-child(2n):before{
+    width:20px;
+    height:20px;
+    border:3px solid #fff;
+    top:38px;
+    left:6px}
+.main-timeline3 .timeline:nth-child(2n) .year{
+    width:60%;
+    right:auto;
+    left:-20px;
+    border-radius:10px 10px 10px 0}
+.main-timeline3 .timeline:nth-child(2n) .year:before{
+    border-left:20px solid transparent;
+    border-bottom:20px solid transparent;
+    border-right:none;
+    right:auto;
+    left:0}
+.main-timeline3 .year{
+    width:60%;
+    font-size:18px;
+    font-weight:800;}
+
+
+}
+
+
+
+    @media screen and (max-width : 1000px) {
+    
+   
+    }
+
+    @media screen and (max-width : 700px) {
+
+    header img{
+    display: none;}
+    header div {
+    justify-content: center;
+}
+    }
